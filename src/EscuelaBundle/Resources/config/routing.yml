@@ -1,0 +1,3 @@
+escuela_t_calificaciones:
+    resource: "@EscuelaBundle/Resources/config/routing/t_calificaciones.yml"
+    prefix:   /calificacion

@@ -1,0 +1,17 @@
+EscuelaBundle\Entity\t_materias:
+    type: entity
+    table: null
+    repositoryClass: EscuelaBundle\Repository\t_materiasRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        nombre:
+            type: string
+            length: 255
+        activo:
+            type: integer
+    lifecycleCallbacks: {  }

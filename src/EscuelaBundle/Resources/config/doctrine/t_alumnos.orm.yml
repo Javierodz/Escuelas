@@ -1,0 +1,25 @@
+EscuelaBundle\Entity\t_alumnos:
+    type: entity
+    table: null
+    repositoryClass: EscuelaBundle\Repository\t_alumnosRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        nombre:
+            type: string
+            length: 255
+        apPaterno:
+            type: string
+            length: 255
+            column: ap_paterno
+        apMaterno:
+            type: string
+            length: 255
+            column: ap_materno
+        activo:
+            type: integer
+    lifecycleCallbacks: {  }

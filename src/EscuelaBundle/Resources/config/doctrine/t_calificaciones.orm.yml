@@ -1,0 +1,24 @@
+EscuelaBundle\Entity\t_calificaciones:
+    type: entity
+    table: null
+    repositoryClass: EscuelaBundle\Repository\t_calificacionesRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        calificacion:
+            type: decimal
+            precision: '10'
+            scale: '2'
+        fechaRegistro:
+            type: datetime
+            column: fecha_registro
+    manyToOne:
+        alumnos:
+            targetEntity: t_alumnos
+        materias:
+            targetEntity: t_materias    
+    lifecycleCallbacks: {  }

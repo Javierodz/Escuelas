@@ -1,0 +1,19 @@
+t_calificaciones_show:
+    path:     /{id}
+    defaults: { _controller: "EscuelaBundle:t_calificaciones:show" }
+    methods:  GET
+
+t_calificaciones_new:
+    path:     /{id}
+    defaults: { _controller: "EscuelaBundle:t_calificaciones:new" }
+    methods:  POST
+
+t_calificaciones_edit:
+    path:     /{id}
+    defaults: { _controller: "EscuelaBundle:t_calificaciones:edit" }
+    methods:  PUT
+
+t_calificaciones_delete:
+    path:     /{id}
+    defaults: { _controller: "EscuelaBundle:t_calificaciones:delete" }
+    methods:  DELETE
